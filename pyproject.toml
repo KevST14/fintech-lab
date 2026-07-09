@@ -1,0 +1,21 @@
+[project]
+name = "fintech-lab"
+version = "0.1.0"
+description = "Small experiments in the engineering behind banks and trading firms, failed attempts included."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib",
+    "numpy",
+]
+
+[dependency-groups]
+dev = [
+    "hypothesis",
+    "ipykernel",
+    "jupyterlab",
+    "pytest",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["experiments"]
